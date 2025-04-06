@@ -9,7 +9,8 @@ while True:
     break
 
   cv2.imshow("frame", frame)
-  if cv2.waitKey(1) & 0xFF == ord('q'):
+  if cv2.waitKey(1) & 0xFF == 32:
+    print("press space bar to quit")
     break
 cap.release()
 cv2.destroyAllWindows()
